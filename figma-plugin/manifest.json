@@ -1,0 +1,8 @@
+{
+  "name": "TransControl — Gerador Editável",
+  "id": "1538459672014786324",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page"
+}

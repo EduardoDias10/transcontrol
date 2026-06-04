@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+  --color-ink: #0b1629;
+  --color-ocean: #1b64f2;
+  --color-mist: #f4f7fb;
+  --color-ember: #f59e0b;
+  --color-mint: #19a974;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #172033;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #cbd5e1;
+}
+
+.panel {
+  border: 1px solid #e5eaf1;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.035);
+}
+
+.input-base {
+  width: 100%;
+  border: 1px solid #dce3ec;
+  border-radius: 11px;
+  background: #ffffff;
+  padding: 10px 12px;
+  color: #172033;
+  outline: none;
+  transition: border-color 150ms, box-shadow 150ms;
+}
+
+.input-base:focus {
+  border-color: #1b64f2;
+  box-shadow: 0 0 0 3px rgba(27, 100, 242, 0.1);
+}
+
+.soft-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.animate-in {
+  animation: fade-up 260ms ease-out;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

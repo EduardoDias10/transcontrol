@@ -1,0 +1,12 @@
+node_modules/
+dist/
+figma-export/
+*.log
+.env
+.env.*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
